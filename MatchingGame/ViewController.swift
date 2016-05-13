@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var playgameButton: UIButton!
     @IBOutlet weak var image_background: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
