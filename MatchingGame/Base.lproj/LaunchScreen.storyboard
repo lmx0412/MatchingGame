@@ -20,17 +20,14 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2016年 lmx. All rights reserved." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dEB-u7-fg5">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matching Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAy-Iv-9sZ">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="69" y="176" width="263" height="55"/>
-                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -46,10 +43,10 @@
                                 <exclude reference="WAy-Iv-9sZ"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="1g6-yq-o4J"/>
                                 <exclude reference="MTk-It-HwQ"/>
                                 <exclude reference="ijc-28-jht"/>
                                 <exclude reference="2Ql-rI-5De"/>
-                                <exclude reference="1g6-yq-o4J"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -58,10 +55,10 @@
                                 <include reference="WAy-Iv-9sZ"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="1g6-yq-o4J"/>
                                 <include reference="MTk-It-HwQ"/>
                                 <include reference="ijc-28-jht"/>
                                 <include reference="2Ql-rI-5De"/>
-                                <include reference="1g6-yq-o4J"/>
                             </mask>
                         </variation>
                     </view>
