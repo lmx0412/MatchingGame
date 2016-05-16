@@ -43,6 +43,39 @@ class GameSceneViewController: UIViewController {
     @IBOutlet weak var button30: UIButton!
     
     
+    var picture:NSArray = [
+        UIImage(named: "icon01.png")!,
+        UIImage(named: "icon01.png")!,
+        UIImage(named: "icon02.png")!,
+        UIImage(named: "icon02.png")!,
+        UIImage(named: "icon03.png")!,
+        UIImage(named: "icon03.png")!,
+        UIImage(named: "icon04.png")!,
+        UIImage(named: "icon04.png")!,
+        UIImage(named: "icon05.png")!,
+        UIImage(named: "icon05.png")!,
+        UIImage(named: "icon06.png")!,
+        UIImage(named: "icon06.png")!,
+        UIImage(named: "icon07.png")!,
+        UIImage(named: "icon07.png")!,
+        UIImage(named: "icon08.png")!,
+        UIImage(named: "icon08.png")!,
+        UIImage(named: "icon09.png")!,
+        UIImage(named: "icon09.png")!,
+        UIImage(named: "icon10.png")!,
+        UIImage(named: "icon10.png")!,
+        UIImage(named: "icon11.png")!,
+        UIImage(named: "icon11.png")!,
+        UIImage(named: "icon12.png")!,
+        UIImage(named: "icon12.png")!,
+        UIImage(named: "icon13.png")!,
+        UIImage(named: "icon13.png")!,
+        UIImage(named: "icon14.png")!,
+        UIImage(named: "icon14.png")!,
+        UIImage(named: "icon15.png")!,
+        UIImage(named: "icon15.png")!,
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -53,8 +86,24 @@ class GameSceneViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func buttonTap(sender: UIButton) {
+        var selectImage :UIImage = self.picture[sender.tag-1] as! UIImage
+        
+        sender.setImage(selectImage, forState: UIControlState.Normal)
     }
 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
