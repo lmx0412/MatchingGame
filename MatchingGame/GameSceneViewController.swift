@@ -50,7 +50,7 @@ class GameSceneViewController: UIViewController {
     var ismatch = false
     var stepCount = 0
     var matchCount = 0
-    var picture:NSArray = [
+    var picture:NSMutableArray = [
         UIImage(named: "icon01.png")!,
         UIImage(named: "icon01.png")!,
         UIImage(named: "icon02.png")!,
@@ -82,10 +82,13 @@ class GameSceneViewController: UIViewController {
         UIImage(named: "icon15.png")!,
         UIImage(named: "icon15.png")!,
     ]
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.shffleArray()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -147,6 +150,31 @@ class GameSceneViewController: UIViewController {
         self.GameSceneLabel.text = "You win with \(self.stepCount)steps"
     }
     
+    func shffleArray(){
+        var i = 0
+        while(i<30){
+            self.picture.exchangeObjectAtIndex(Int(arc4random_uniform(29)), withObjectAtIndex: Int(arc4random_uniform(29)))
+            i += 1
+        }
+        
+    }
+    //func shuffleArray(){
+      //  var i = 0
+        //var count1 = Int(arc4random_uniform(29))
+        //var image1 :UIImage
+        //while(i<20){
+          //  var count1 = Int(arc4random_uniform(29))
+            //var count2 = Int(arc4random_uniform(29))
+            //image1 = self.picture[count1] as! UIImage
+            //self.picture[count1] = self.picture[count2]
+            
+            
+            
+            //i += 1
+        //}
+        
+        
+   // }
     
     
     
